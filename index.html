@@ -574,6 +574,27 @@
             }
         }
 
+    
+        /* Formulário de aviso exclusivo para a versão PS3 */
+        .ps3-email-notification {
+            max-width: 760px;
+            margin: -36px auto 75px;
+            border: 1px solid #2c2c2c;
+            background: var(--bg-dark);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .ps3-email-notification iframe {
+            display: block;
+            width: 100%;
+            min-height: 450px;
+            border: 0;
+        }
+        @media (max-width: 640px) {
+            .ps3-email-notification { margin: -40px 0 60px; border-radius: 16px; }
+            .ps3-email-notification iframe { min-height: 500px; }
+        }
+
     </style>
 </head>
 
@@ -725,6 +746,20 @@
 
                 </div>
 
+            </div>
+
+
+            <!-- Aviso de disponibilidade do PS3: inscrição direta via Brevo -->
+            <div class="ps3-email-notification" id="aviso-ps3">
+                <iframe
+                    title="Cadastre seu e-mail para ser avisado sobre a versão PS3"
+                    src="https://6763ef8b.sibforms.com/serve/MUIFAHWjCvO8IotqxdJiI_9NwhejSym3RnL6unySFCyOXkc3YRByuujIdt0Jv65PjfqVcOxHxQVNlaXI4rezbzA08tzf_9YVceJPbyO3bpxBrnX9iZCulKOini5s1H6mnARe3DmNGc1I_Qg2wRqLHrUm9YdKsaiUXXsicGegQrYhFrCes-bjAj86JbkyNfqKRX5kc8OLDUAsTERNeQ=="
+                    width="540"
+                    height="450"
+                    loading="lazy"
+                    scrolling="auto"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
             </div>
 
             <!-- XBOX -->
